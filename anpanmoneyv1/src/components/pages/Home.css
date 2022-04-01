@@ -1,0 +1,180 @@
+.debody {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  float: left;
+}
+
+.debody #side {
+  flex: 20%;
+}
+
+.debody #sec {
+  flex: 80%;
+}
+
+.container {
+  background-color: white;
+  width: 70vw;
+  height: 570px;
+  margin: 10px;
+  border-radius: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container #bStatus {
+  display: flex;
+  flex-direction: row;
+}
+
+.container #rOutput {
+  margin: 15px;
+  width: 10vw;
+  background-color: #e7e7da;
+  font-size: 12px;
+  flex: 25%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.TransactionBox {
+  border-radius: 10px;
+  width: 70vw;
+  height: 300px;
+  background-color: #efefef;
+  position: relative;
+}
+
+.TransactionBox #tBox {
+  display: flex;
+  flex-direction: row;
+}
+.TransactionBox #addIcon {
+  position: absolute;
+  color: green;
+  bottom: 0;
+  right: 0;
+}
+
+.TransactionBox #addIcon :hover {
+  cursor: pointer;
+  background-color: lightgreen;
+}
+.container #rInfoS {
+  font-size: 25px;
+  color: green;
+}
+.container #rInfoW {
+  font-size: 25px;
+  color: red;
+}
+.container #rInfoN {
+  font-size: 25px;
+  color: purple;
+}
+.container #rInfo {
+  font-size: 25px;
+  color: black;
+}
+
+.container #mB {
+  flex-wrap: wrap;
+}
+
+.tBoxList {
+  width: 100%;
+}
+.tBoxList .row {
+  width: 98%;
+  list-style-type: none;
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.column {
+  width: 98%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.column #c1 {
+  flex: 33%;
+}
+.column #c2 {
+  flex: 33%;
+}
+.column #c3 {
+  flex: 33%;
+}
+.row {
+  text-align: center;
+}
+.row #categorygreen {
+  flex: 33%;
+  color: black;
+  background-color: rgb(82, 161, 82);
+  border-radius: 20px;
+}
+.row #remarkgreen {
+  flex: 33%;
+  color: black;
+  background-color: rgb(82, 161, 82);
+  border-radius: 20px;
+}
+.row #amountgreen {
+  flex: 33%;
+  color: black;
+  background-color: rgb(82, 161, 82);
+  border-radius: 20px;
+}
+
+.row #categorypurple {
+  flex: 33%;
+  color: black;
+  background-color: rgb(145, 55, 145);
+  border-radius: 20px;
+}
+.row #remarkpurple {
+  flex: 33%;
+  color: black;
+  background-color: rgb(145, 55, 145);
+  border-radius: 20px;
+}
+.row #amountpurple {
+  flex: 33%;
+  color: black;
+  background-color: rgb(145, 55, 145);
+  border-radius: 20px;
+}
+
+.row #categoryred {
+  flex: 33%;
+  color: black;
+  background-color: rgb(231, 66, 66);
+  border-radius: 20px;
+}
+.row #remarkred {
+  flex: 33%;
+  color: black;
+  background-color: rgb(231, 66, 66);
+  border-radius: 20px;
+}
+.row #amountred {
+  flex: 33%;
+  color: black;
+  background-color: rgb(231, 66, 66);
+  border-radius: 20px;
+}
+
+.container #bStatusContainer {
+  border-radius: 10px;
+  width: 70vw;
+  height: 105px;
+  background-color: #efefef;
+}
