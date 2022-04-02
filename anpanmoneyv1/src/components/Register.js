@@ -18,8 +18,9 @@ const Register = () => {
 
       <center>
         <label class="custom-field one">
+          <h2>Email:</h2>
           <input type="text" required />
-          <span class="placeholder">Enter Email</span>
+          <input placeholder = "johndoe@anpanmoney.ph"/>
           <br></br>
           <br></br>
         </label>
