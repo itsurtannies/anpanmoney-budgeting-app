@@ -1,9 +1,10 @@
-import * as firebase from "firebase/app";
-import "firebase/auth";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import {getAuth} from "firebase/auth";
 
 
 // Your web app's Firebase configuration
-const app =firebase.initializeApp ({
+const firebaseConfig = {
   apiKey: "AIzaSyCpgsjZ8EuVpVod4_s8nOjet2TyB1hEmiE",
   authDomain: "anpanmoney-cf5d0.firebaseapp.com",
   databaseURL: "https://anpanmoney-cf5d0-default-rtdb.firebaseio.com",
@@ -11,6 +12,9 @@ const app =firebase.initializeApp ({
   storageBucket: "anpanmoney-cf5d0.appspot.com",
   messagingSenderId: "28971312083",
   appId: "1:28971312083:web:22ba4e81022e45f69ac526"
-});
+};
 
-export default app;
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+export const auth = getAuth(app)

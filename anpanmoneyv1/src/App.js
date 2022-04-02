@@ -8,22 +8,41 @@ import Settings from "./components/pages/Settings";
 import Login from './components/Login'
 import Register from './components/Register'
 
-const App = () => {
-    return(
+function App(){
+    const[registerEmail, setRegisterEmail] = useState(" ");
+    const[registerPassword, setRegisterPassword] = useState(" ");
+    const[loginEmail, setLoginEmail] = useState(" ");
+    const[loginPassword, setLoginPassword] = useState(" ");
+
+    const register = async() => {
+
+    }
+    const login = async() => {
     
-        <div className="app-main">
-            <Routes>
-                <Route path='/login' element={<Login/>} />
-                <Route path='/home' element={<Home/>} />
-                <Route path='/register' element={<Register/>} />
-                <Route path='/dashboard' element={<Dashboard/>} />
-                <Route path='/profile' element={<Profile/>} />
-                <Route path='/settings' element={<Settings/>} />
-            </Routes>
-        </div>
+    }
     
+    const logout = async() => {
     
-    )
+    }
+    
+    const App = () => {
+        return(
+            
+        
+            <div className="app-main">
+                <Routes>
+                    <Route path='/login' element={<Login/>} />
+                    <Route path='/home' element={<Home/>} />
+                    <Route path='/register' element={<Register/>} />
+                    <Route path='/dashboard' element={<Dashboard/>} />
+                    <Route path='/profile' element={<Profile/>} />
+                    <Route path='/settings' element={<Settings/>} />
+                </Routes>
+            </div>
+        
+        
+        )
+}
 }
 
 export default App
