@@ -19,7 +19,6 @@ const Register = () => {
       <center>
         <label class="custom-field one">
           <input type="text" required />
-          <input placeholder ="enter email"/>
           <span class="placeholder">Enter Email</span>
           <br></br>
           <br></br>
