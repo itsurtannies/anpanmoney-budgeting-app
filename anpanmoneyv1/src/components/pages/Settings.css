@@ -1,0 +1,44 @@
+.containerS{
+    position: relative;
+  width: 75%;
+  height: 95px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 35px;
+  
+  background-color: rgb(184,213,174);
+}
+
+.containerS .containerSs{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height:95px;
+    background-color: rgb(227,226,226);
+    padding: 10px;
+    border-radius: 20px;
+    
+
+
+  }
+
+  .containerSs #row{
+      margin-bottom: 5px;
+  }
+
+
+  .containerSs #inputS{
+      width: 65%;
+      position:absolute;
+      right:0;
+      margin-right: 12%;
+      
+  }
+  .containerSs #button{
+      position:absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 1%;
+      margin-bottom: 1%;
+  }

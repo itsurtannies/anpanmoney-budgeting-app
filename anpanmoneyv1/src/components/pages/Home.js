@@ -4,14 +4,16 @@ import Header from "./Header";
 import "./Home.css";
 import AddIcon from "@mui/icons-material/Add";
 import Popup from "./pagesComponents/addTPopup";
+import Popupe from "./pagesComponents/homeEditPopup";
 import { useState } from "react";
+import CloseIcon from "@mui/icons-material/Close";
 
 function colorSelect(categ) {
-  if (categ == "savings") {
+  if (categ === "savings") {
     return "green";
-  } else if (categ == "needs") {
+  } else if (categ === "needs") {
     return "purple";
-  } else if (categ == "wants") {
+  } else if (categ === "wants") {
     return "red";
   }
 }
@@ -43,6 +45,7 @@ var listData = [
     Amount: 5000,
   },
 ];
+
 const Home = () => {
   var rBalance = 5000;
   var rWants = 2000;
@@ -51,6 +54,10 @@ const Home = () => {
   var name = "John";
   var monthlyBudget = 30000;
   const [buttonPopup, setButtonPopup] = useState(false);
+  const [buttonPopup1, setButtonPopup1] = useState(false);
+  const toggle = () => {
+    setButtonPopup1(!buttonPopup1);
+  };
   return (
     <div>
       <Header />
@@ -111,7 +118,15 @@ const Home = () => {
                           {val.remark}
                         </div>
                         <div id={`amount${colorSelect(val.category)}`}>
-                          {val.Amount}
+                          <div className="deleteFlex">
+                            <div id="lastcol1">{val.Amount}</div>{" "}
+                            <div id="lastcol2">
+                              <Popupe
+                                trigger={buttonPopup1}
+                                setTrigger={setButtonPopup1}
+                              ></Popupe>
+                            </div>
+                          </div>
                         </div>
                       </li>
                     );
@@ -120,6 +135,10 @@ const Home = () => {
               </div>
               <div id="addIcon" onClick={() => setButtonPopup(true)}>
                 <AddIcon />
+              </div>
+
+              <div id="closeIcon" onClick={toggle}>
+                <CloseIcon />
               </div>
             </div>
           </div>
