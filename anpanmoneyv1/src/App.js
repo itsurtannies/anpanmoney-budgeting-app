@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes ,Route, BrowserRouter } from 'react-router-dom';
+import { Routes ,Route, BrowserRouter, Router } from 'react-router-dom';
 
 import Home from './components/pages/Home'
 import Profile from "./components/pages/Profile";
@@ -12,19 +12,16 @@ const App = () => {
     return(
     
         <div className="app-main">
-            
             <Routes>
-
-                <Route path='/login' element={<Login/>} />
+                <Route path='/' element ={<Login/>}/>
                 <Route path='/home' element={<Home/>} />
                 <Route path='/register' element={<Register/>} />
                 <Route path='/dashboard' element={<Dashboard/>} />
                 <Route path='/profile' element={<Profile/>} />
                 <Route path='/settings' element={<Settings/>} />
             </Routes>
+            
         </div>
-    
-    
     )
 }
 
