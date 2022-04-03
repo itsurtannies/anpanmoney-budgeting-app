@@ -10,7 +10,7 @@ function Profile() {
         <div id="side">
           <Sidebar />
         </div>
-
+        
         <div id="sec">PROFILE</div>
       </div>
     </div>

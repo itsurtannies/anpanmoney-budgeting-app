@@ -44,6 +44,12 @@ var listData = [
     remark: "utility bills",
     Amount: 5000,
   },
+  {
+    category: "savings",
+    remark: "BDO Savings",
+    Amount: 2000,
+  },
+  
 ];
 
 const Home = () => {

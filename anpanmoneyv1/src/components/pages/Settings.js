@@ -39,12 +39,54 @@ function Settings() {
             </div>
           </div>
           <div className="containerS">
-            <h3>SECURITY SETTINGS</h3>
-            <div className="containerSs"></div>
+            <h3>USER INFORMATION</h3>
+            <div className="containerSs">
+              <div id="row">
+                old password
+                <input id="inputS" type={"password"} />
+              </div>
+
+              <div id="row">
+                new password
+                <input id="inputS" type={"password"} />
+              </div>
+              <div id="button">
+                <Button
+                  buttonStyle="btn--success--solid"
+                  buttonSize={"btn--medium"}
+                >
+                  Save Changes
+                </Button>
+              </div>
+            </div>
           </div>
           <div className="containerS">
-            <h3>PERSONAL INFO</h3>
-            <div className="containerSs"></div>
+            <h3>USER INFORMATION</h3>
+            <div className="containerSs">
+              <div id="row">
+                Occupation
+                <input id="inputS" type={"text"} />
+              </div>
+
+              <div id="row">
+                Budget/Allowance
+                <input id="inputS" type={"text"} />
+              </div>
+
+              <div id="row">
+                Occupation
+                <input id="inputS" type={"text"} />
+              </div>
+              <div id="button">
+                
+                <Button
+                  buttonStyle="btn--success--solid"
+                  buttonSize={"btn--medium"}
+                >
+                  Save Changes
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 .containerS{
     position: relative;
   width: 75%;
-  height: 95px;
+  height: 115px;
   border-radius: 20px;
   padding: 10px;
   margin-bottom: 35px;
@@ -14,7 +14,7 @@
     top: 0;
     right: 0;
     width: 70%;
-    height:95px;
+    height:115px;
     background-color: rgb(227,226,226);
     padding: 10px;
     border-radius: 20px;
@@ -29,7 +29,7 @@
 
 
   .containerSs #inputS{
-      width: 65%;
+      width: 45%;
       position:absolute;
       right:0;
       margin-right: 12%;

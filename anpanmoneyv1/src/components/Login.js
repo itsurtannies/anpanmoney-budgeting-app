@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Button";
+import { Button } from "./pages/pagesComponents/Button";
 import img1 from "./images/logo.png";
 import "./pages/pagesComponents/inputBox.css";
 import { Link, NavLink } from "react-router-dom";
