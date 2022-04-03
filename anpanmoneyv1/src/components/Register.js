@@ -18,7 +18,7 @@ const Register = () => {
 
       <center>
         <label class="custom-field one">
-          <input type="text" onChange= {(event)=> {setRegisterEmail(event.target.value)}} />
+          <input type="text" required />
           <span class="placeholder">Enter Email</span>
           <br></br>
           <br></br>
@@ -26,10 +26,10 @@ const Register = () => {
       </center>
       <center>
         <label class="custom-field one">
-          <input type="text" onChange= {(event)=> {setRegisterEmail(event.target.value)}}  />
+          <input type="text" required />
           <span class="placeholder">Enter Username</span> &nbsp; &nbsp; &nbsp;
           &nbsp; &nbsp; &nbsp; &nbsp;
-          <input type="text" onChange= {(event)=> {setRegisterEmail(event.target.value)}} />
+          <input type="text" required />
           <span class="placeholder1">Enter Password</span>
         </label>
       </center>
