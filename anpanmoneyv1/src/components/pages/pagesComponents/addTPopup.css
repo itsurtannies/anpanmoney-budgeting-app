@@ -29,6 +29,13 @@
   padding: 6px 20px;
   margin-bottom: 5px;
 }
+.tBoxs{
+  width: 93.5 %;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 6px 20px;
+  margin-bottom: 5px;
+}
 
 .textbar {
   display: flex;
@@ -66,4 +73,8 @@
   background-color: green;
   cursor: pointer;
   border-radius: 20px;
+}
+
+.placeholder{
+  color: lightgray;
 }
