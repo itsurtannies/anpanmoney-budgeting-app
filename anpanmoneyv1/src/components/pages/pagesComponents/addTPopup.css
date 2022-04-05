@@ -29,6 +29,7 @@
   padding: 6px 20px;
   margin-bottom: 5px;
 }
+
 .tBoxs{
   width: 93.5 %;
   border: 1px solid #000;
@@ -36,7 +37,6 @@
   padding: 6px 20px;
   margin-bottom: 5px;
 }
-
 .textbar {
   display: flex;
   flex-direction: row;
